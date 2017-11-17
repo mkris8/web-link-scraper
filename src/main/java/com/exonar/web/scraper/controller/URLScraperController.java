@@ -20,7 +20,7 @@ public class URLScraperController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(URLScraperController.class);
 	
-    private final String requestMappingValue = "/link/{URL:.+}";
+    private final String requestMappingValue = "/link/{URL:.+}/**";
     private final String defaultError = "Please provide a valid input.";
     
     private Integer linkId;
